@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nuitka-gui"
+version = "2.5.4"
+description = "A friendly GUI frontend for the Nuitka Python compiler"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Hector Bertorello" }
+]
+keywords = ["nuitka", "compiler", "gui", "python", "exe", "standalone"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Win32 (MS Windows)",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Compilers",
+  "Topic :: Utilities",
+]
+dependencies = [
+  "customtkinter>=5.2.0",
+  "pillow>=10.0.0",
+  "nuitka>=2.0.0",
+]
+
+[project.scripts]
+nuitka-gui = "nuitka_gui.main:main"
+
+[project.urls]
+Homepage = "https://github.com/hbertorello/nuitka-gui"
+"Bug Tracker" = "https://github.com/hbertorello/nuitka-gui/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["nuitka_gui"]
