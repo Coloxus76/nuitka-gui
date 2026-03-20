@@ -20,7 +20,7 @@ No more memorizing long command-line flags — just point, click, and compile.
 
 ## 📸 Screenshots
 
-![Nuitka GUI Screenshot](https://raw.githubusercontent.com/Coloxus/nuitka-gui/main/assets/screenshot.png)
+![Nuitka GUI Screenshot](https://raw.githubusercontent.com/Coloxus76/nuitka-gui/blob/main/assets/screenshot.png)
 ---
 
 ## ⚙️ Requirements
